@@ -545,5 +545,12 @@ border-radius: 15px;
     color: black;
   }
   
- 
+ #error{
+  color: red;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  display: none;
+ }
   
