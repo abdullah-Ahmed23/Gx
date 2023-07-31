@@ -129,3 +129,32 @@ toggle.addEventListener("click", function () {
     header.style.background = ''
   }
 });
+document.querySelector('.btn').disabled = true
+function valdi() {
+  var name = document.getElementById("Name").value;
+  var email = document.getElementById("email").value;
+  var msg = document.getElementById("msg_input").value;
+  var error = document.getElementById("error");
+
+  
+   var text = "";
+   if (name.length < 8   ) {
+    text = "Please enter valid name Or email";
+    document.getElementById("error").style.display = "block";
+    error.innerHTML = text;
+    
+    return false;
+  }
+   else if (email.length < 15 || email.indexOf("@") == -1 )  {
+    text = "Please FILL the email";
+    document.getElementById("error").style.display = "block";
+    error.innerHTML = text;
+    
+    return false;
+  } else {
+    
+    document.getElementById("error").style.display = "none";
+    document.querySelector('.btn').disabled = false
+    return true;
+  }
+}

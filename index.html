@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Gx</title>
   </head>
   <body>
     <header>
@@ -78,7 +78,7 @@
           <div class="text">
             <h1>Welcome</h1>
             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut velit nobis illum rem voluptatibus animi minus dicta exercitationem recusandae odit ex numquam, nam ea earum eius perferendis error perspiciatis harum!</p>
-            <a  href="#contact">Contact Us</a>
+            <a  href="#">Contact Us</a>
           </div>
         </div>
       </div>
@@ -271,8 +271,8 @@
         </div>
         
         <div  class="contact-form ">
-          
-          <form id="contact-form">
+          <p id="error"></p>
+          <form id="contact-form" onkeydown="valdi()">
             <input type="name"
             name="name" id="Name" type="text" placeholder=" Frist Name" class="txt">
             
@@ -281,6 +281,7 @@
             
             <textarea  id="msg_input" placeholder="How we Can Help You🤗" class="txtarea"></textarea>
             <!-- <input  id="#submit" type="submit" value="Send"   > -->
+            
             <button  class="btn" >Send</button>
            
           </form>
