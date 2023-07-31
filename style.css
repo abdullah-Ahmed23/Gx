@@ -1,0 +1,549 @@
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(22, 22, 22);	
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+.white-theme{
+  --primary-color: white;
+  --primary-color: rgb(24, 64, 70);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+header img {
+  width: 100px;
+}
+header {
+  background-color: #0a0908;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+  transition: 0.3s;
+  padding: 10px 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: rgb(3, 36, 99);
+  background-color: aliceblue;
+  padding: 10px 25px;
+}
+nav i {
+  color: aliceblue;
+}
+.hero {
+  background-color: #0a0908;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+}
+.hero .row {
+  display: flex;
+  align-items: center;
+  color: azure;
+}
+
+.hero .row a{
+    text-decoration: none;
+    padding: 15px 10px;
+    background-color: aquamarine;
+    color: rgb(53, 52, 52);
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+.hero .row a:hover{
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+}
+.Cardss{
+    background-image: url(IMG/shubham-dhage-NsPqV-WsZYY-unsplash.jpg);
+    height: 90vh;
+   
+}
+@media (max-width:768px) {
+  .Cardss{
+    height: 100%;
+  }
+
+ 
+}
+@media (max-width:992px) {
+  .Cardss{
+    height: 100%;
+  }
+
+}
+@media (max-width:545px){
+
+  .uu{
+    margin-bottom: 5vh;
+  }
+}
+.Cardss .text-center{
+    color: aliceblue;
+    
+}
+
+.Cardss .text-center p{
+    max-width: 700px;
+    text-align: center;
+    margin-left: auto;
+margin-right: auto;
+}
+.Cardss .row{
+display: flex;
+align-items: center;
+
+}
+.cardo{
+    color: antiquewhite;
+    text-align: center;
+    border: 2px solid white;
+    padding: 35px 10px;
+    border-radius: 10px 10px 10px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+
+}
+.cardo:hover{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    text-align: center;
+    border: 2px solid white;
+    padding: 35px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+.cardo i{
+    font-size: 30px;
+}
+.active{
+    position: relative;
+    bottom: 2vh;
+    background-color: aliceblue;
+    color: #0a0908;
+    border-radius: 10px 10px 10px 10px;
+    animation: up-and-down 2s linear infinite forwards;
+}
+@keyframes up-and-down {
+  0% {
+    bottom: 2vh;
+  }
+  50% {
+    bottom: 5vh;
+  }
+  100% {
+    bottom: 2vh;
+  }
+}
+.Our-Work{
+  height: 100%;
+  
+}
+.Our-Work .switch{
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  list-style-type: none;
+}
+.Our-Work .switch li{
+  margin: 35px 15px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px;
+  transition: 0.8s;
+}
+.Our-Work .switch li:hover{
+  background-color: #0a0908;
+  color: white;
+  border-radius: 15px;
+}
+.Our-Work .switch .activee{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  transition: 0.8s;
+}
+.gallery img{
+  width: 200px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.gallery img:hover{
+  transform: scale(1.2);
+}
+.Our-Work h1{
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  border-radius: 5px;
+  border-bottom: 5px solid black;
+  width: 500px;
+  margin-left: auto;
+margin-right: auto;
+  padding: 20px 15px;
+  
+}
+
+
+.Our-Work hr{
+ 
+  border-top: 11px solid black;
+}
+@media (max-width:768px){
+  .Our-Work .switch li{
+    margin: 10px 10px;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: 700;
+    padding: 15px;
+  }
+  .gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .gallery img:hover{
+    transform: scale(1.1);
+  }
+  .Our-Work h1{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    border-bottom: 5px solid black;
+    width: 100%;
+    margin-left: auto;
+  margin-right: auto;
+    padding: 20px 15px;
+    
+  }
+}
+@media (max-width:280px){
+  .Our-Work .switch li{
+    margin: 10px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 15px;
+  }
+}
+.swiper {
+  width: 80%;
+ padding-top: 50px;
+ padding-bottom: 100px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+ width: 450px;
+ 
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  transition: 0.5s ease;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0002,#0004);
+}
+.swiper-slide img:hover{
+  filter: brightness(50%);
+}
+@media (max-width:768px){
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+   width: 100%;
+   
+  
+  }
+  .Our-Work .card{
+    border: 2px solid;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 20px 0;
+  }
+ 
+}
+.Our-Work .cardddd{
+background-color: #858484;
+padding: 20px 15px;
+border-radius: 15px;
+}
+.Our-Work .card{
+  border: 2px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Our-Work .card:hover{
+  background-color: #0a0908;
+  color: white;
+  box-shadow: 10px 20px 0 0 blanchedalmond;
+}
+.contact-us{
+  background-color: #0a0908;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20vh;
+}
+ .contact-us{
+    width: 100%;
+    
+    display: grid;
+    align-items: center;
+    background: #000000;
+  }
+  .contact-us h1{
+    color: white;
+    border-bottom: 3px solid;
+    width: 250px;
+    margin: auto auto;
+    border-radius: 12px;
+  }
+  .contact-us .contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-radius:10px ;
+    background: #02294e;
+    box-shadow: 0px 0px 10px 0px #666;
+  }
+  .contact-us .contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+  }
+  .contact-us .contact-map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    
+  }
+  .contact-us .contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+  }
+  .contact-us .contact-form h1{
+    
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  .contact-us .contact-form h1::before{
+    content: '';
+
+  }
+  .contact-us .contact-form .txt{
+    width: 100%;
+    height: 40px;
+    color: #00497a;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: 0.4s ease;
+  }
+  .contact-us .contact-form .txt::placeholder{
+    color: black;
+    direction: rtl;
+    transition: 0.4s ease;
+  }
+  .contact-us .contact-form .txt:hover::placeholder{
+    
+    color: white;
+  }
+  .contact-us .contact-form .txt:hover{
+    background-color: black;
+    color: white;
+  }
+  .contact-us .contact-form .txt:focus::placeholder{
+    background-color: black;
+    color: white;
+  }
+  .contact-us .contact-form .txt:focus{
+    background-color: black;
+    color: white;
+  }
+  .contact-us .contact-form .txtarea:focus{
+    background-color: black;
+    color: white;
+  }
+
+  .contact-us .contact-form .txtarea::placeholder{
+    text-align: center;
+    color: #000;
+    direction: rtl;
+  }
+  .contact-us .contact-form .txtarea:focus::placeholder{
+    text-align: center;
+    color: #fffcfc;
+    direction: rtl;
+  }
+  .contact-us .contact-form .txtarea:hover::placeholder{
+    text-align: center;
+    color: #ffffff;
+    direction: rtl;
+  }
+  .contact-us .contact-form .txtarea:hover{
+    background-color: black;
+    color: white;
+  }
+  .contact-us .contact-form .txtarea{
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: 0.3s;
+  }
+  .icons{
+    position: absolute;
+    left: 25px;
+  }
+  @media (max-width:768px) {
+    .icons{
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 10px;
+      z-index: 995;
+
+    }
+    .icons button{
+      margin: 10px 0;
+      outline: none;
+      border: none;
+      background-color: #F5F5F5;
+      padding: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+    }
+  }
+
+  .icons i{
+    
+   text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+
+  }
+  .icons i:active{
+    
+   text-align: center;
+    background-color: #000000;
+    padding: 15px;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+  }
+  .icons .dat{
+    color: black;
+    font-size: 17px;
+
+  }
+  .icons .Date{
+    padding: 10px;
+    color: #F5F5F5;
+    border-radius: 100%;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: -25%;
+    transition: 0.3s;
+    margin-top: 10px;
+
+  }
+  .icons  i{
+    transition: 0.5s all;
+  }
+  .contact-us .contact-form .btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #013147;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .contact-us .contact-form .btn:hover{
+    background: black;
+  }
+  .contact-us .contact-form .btn:active{
+    background-color: rgb(148, 148, 148);
+    box-shadow: 0 0 0 5px rgb(148, 148, 148);
+  }
+  @media (max-width:992px) {
+    .contact-in{
+      flex-direction: column;
+      
+    }
+  }
+  .Date{
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+  #date {
+    /* or any other position that works for your layout */
+    display: block; /* make sure the element is visible by default */
+    opacity: 0; /* set opacity to 0 to hide the element */
+    transition: all 0.5s ease-in-out; /* define the transition */
+  }
+  .Dark {
+    background-color: white;
+    color: black;
+  }
+  
+ 
+  
