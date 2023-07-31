@@ -89,6 +89,13 @@ nav i {
     height: 90vh;
    
 }
+.nav-icon{
+  padding: 15px;
+  background:white;
+  color: #000;
+  border-radius: 15px;
+  cursor: pointer;
+}
 @media (max-width:768px) {
   .Cardss{
     height: 100%;

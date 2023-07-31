@@ -114,7 +114,7 @@ toggle.addEventListener("click", function () {
   if(this.classList.toggle('fa-moon')){
     footer.style.background = '#8D99AE'
     hero.style.background = '#8D99AE'
-    hero.style.transition = '2s'
+    hero.style.transition = '0.8s'
     cards.style.background = '#8D99AE'
     herocol.style.color = 'black'
     header.style.background = '#8D99AE'
@@ -123,7 +123,7 @@ toggle.addEventListener("click", function () {
   else{
     footer.style.background = ''
     hero.style.background = ''
-    hero.style.transition = '2s'
+    hero.style.transition = '0.4s'
     cards.style.background = ''
     herocol.style.color = ''
     header.style.background = ''
