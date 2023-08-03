@@ -67,20 +67,19 @@ const icon = document.querySelector(".fa-calendar-days");
 const date = document.querySelector("#date");
 
 icon.addEventListener("click", function (event) {
-  event.stopPropagation(); // prevent click event from bubbling up to document
+  event.stopPropagation(); 
   date.innerHTML = new Date().toLocaleDateString();
   date.style.opacity = "1";
   date.style.marginTop = "20px";
-  // change opacity to 1 to show the element
+  
 });
 
 document.addEventListener("click", function (event) {
   if (!date.contains(event.target)) {
-    // only hide the date element if the click was outside of it
+    
     date.style.opacity = "0";
     date.style.marginTop = "0px";
 
-    // change opacity to 0 to hide the element
   }
 });
 
@@ -93,40 +92,37 @@ const header = document.querySelector("nav");
 const li = document.querySelectorAll(".nav-link")
 const cards = document.querySelector(".Cardss");
 const footer = document.querySelector(".contact-us");
+const ourwork = document.querySelector(".Our-Work")
 
-// icons.addEventListener('click', function() {
 
-//   icons.classList.toggle('fa-sun');
-//   icons.classList.toggle('fa-moon');
-
-// })
-// icons.addEventListener('click', function(){
-//   {
-//     footer.style.background = '#8D99AE'
-//     hero.style.background = '#8D99AE'
-//     hero.style.transition = '2s'
-//     cards.style.background = '#8D99AE'
-//     herocol.style.color = 'black'
-//   }
-// })
 toggle.addEventListener("click", function () {
   this.classList.toggle('fa-sun');
   if(this.classList.toggle('fa-moon')){
     footer.style.background = '#8D99AE'
     hero.style.background = '#8D99AE'
-    hero.style.transition = '0.8s'
+    hero.style.transition = '1s'
+    cards.style.transition = '1s'
+    herocol.style.transition = '1s'
+    header.style.transition = '1s'
+    footer.style.transition = '1s'
+    ourwork.style.transition = '1s'
     cards.style.background = '#8D99AE'
     herocol.style.color = 'black'
     header.style.background = '#8D99AE'
+    ourwork.style.background = '#8D99AE'
    
   }
   else{
     footer.style.background = ''
     hero.style.background = ''
-    hero.style.transition = '0.4s'
+    hero.style.transition = '1s'
+    cards.style.transition = '1s'
+    herocol.style.transition = '1s'
+    header.style.transition = '1s'
     cards.style.background = ''
     herocol.style.color = ''
     header.style.background = ''
+    ourwork.style.background = ''
   }
 });
 document.querySelector('.btn').disabled = true
@@ -139,7 +135,7 @@ function valdi() {
   
    var text = "";
    if (name.length < 8   ) {
-    text = "Please enter valid name Or email";
+    text = "Please enter valid name";
     document.getElementById("error").style.display = "block";
     error.innerHTML = text;
     

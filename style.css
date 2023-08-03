@@ -86,7 +86,7 @@ nav i {
 }
 .Cardss{
     background-image: url(IMG/shubham-dhage-NsPqV-WsZYY-unsplash.jpg);
-    height: 90vh;
+    height: 110vh;
    
 }
 .nav-icon{
@@ -174,7 +174,7 @@ align-items: center;
 }
 .Our-Work{
   height: 100%;
-  
+  background-color: #0a0908;
 }
 .Our-Work .switch{
   display: flex;
@@ -189,15 +189,16 @@ align-items: center;
   font-weight: 700;
   padding: 15px;
   transition: 0.8s;
+  color: white;
 }
 .Our-Work .switch li:hover{
-  background-color: #0a0908;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border-radius: 15px;
 }
 .Our-Work .switch .activee{
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-radius: 15px;
   transition: 0.8s;
 }
@@ -210,10 +211,10 @@ align-items: center;
   transform: scale(1.2);
 }
 .Our-Work h1{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   border-radius: 5px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid rgb(255, 255, 255);
   width: 500px;
   margin-left: auto;
 margin-right: auto;
@@ -450,8 +451,8 @@ border-radius: 15px;
   }
   @media (max-width:768px) {
     .icons{
-      position: absolute;
-      bottom: 0;
+      
+      
       margin-bottom: 10px;
       z-index: 995;
 
