@@ -16,10 +16,12 @@ function removeActive() {
 function mimgs() {
   imgs.forEach((img) => {
     img.style.display = "none";
+    img.style.opacity = "0";
   });
   document.querySelectorAll(this.dataset.li).forEach((el) => {
     el.style.display = "inline-block";
-    el.style.transition = "0.4s ease";
+    el.style.transition = "1s ease";
+    el.style.opacity = "1";
   });
 }
 const contactForm = document.querySelector("#contact-form");
@@ -67,19 +69,16 @@ const icon = document.querySelector(".fa-calendar-days");
 const date = document.querySelector("#date");
 
 icon.addEventListener("click", function (event) {
-  event.stopPropagation(); 
+  event.stopPropagation();
   date.innerHTML = new Date().toLocaleDateString();
   date.style.opacity = "1";
   date.style.marginTop = "20px";
-  
 });
 
 document.addEventListener("click", function (event) {
   if (!date.contains(event.target)) {
-    
     date.style.opacity = "0";
     date.style.marginTop = "0px";
-
   }
 });
 
@@ -89,68 +88,69 @@ const body = document.querySelector("body");
 const hero = document.querySelector(".hero");
 const herocol = document.querySelector(".row");
 const header = document.querySelector("nav");
-const li = document.querySelectorAll(".nav-link")
+const li = document.querySelectorAll(".nav-link");
 const cards = document.querySelector(".Cardss");
 const footer = document.querySelector(".contact-us");
-const ourwork = document.querySelector(".Our-Work")
-
+const ourwork = document.querySelector(".Our-Work");
 
 toggle.addEventListener("click", function () {
-  this.classList.toggle('fa-sun');
-  if(this.classList.toggle('fa-moon')){
-    footer.style.background = '#8D99AE'
-    hero.style.background = '#8D99AE'
-    hero.style.transition = '1s'
-    cards.style.transition = '1s'
-    herocol.style.transition = '1s'
-    header.style.transition = '1s'
-    footer.style.transition = '1s'
-    ourwork.style.transition = '1s'
-    cards.style.background = '#8D99AE'
-    herocol.style.color = 'black'
-    header.style.background = '#8D99AE'
-    ourwork.style.background = '#8D99AE'
-   
-  }
-  else{
-    footer.style.background = ''
-    hero.style.background = ''
-    hero.style.transition = '1s'
-    cards.style.transition = '1s'
-    herocol.style.transition = '1s'
-    header.style.transition = '1s'
-    cards.style.background = ''
-    herocol.style.color = ''
-    header.style.background = ''
-    ourwork.style.background = ''
+  this.classList.toggle("fa-sun");
+  if (this.classList.toggle("fa-moon")) {
+    footer.style.background = "#8D99AE";
+    hero.style.background = "#8D99AE";
+    hero.style.transition = "1s";
+    cards.style.transition = "1s";
+    herocol.style.transition = "1s";
+    header.style.transition = "1s";
+    footer.style.transition = "1s";
+    ourwork.style.transition = "1s";
+    cards.style.background = "#8D99AE";
+    herocol.style.color = "black";
+    header.style.background = "#8D99AE";
+    ourwork.style.background = "#8D99AE";
+  } else {
+    footer.style.background = "";
+    hero.style.background = "";
+    hero.style.transition = "1s";
+    cards.style.transition = "1s";
+    herocol.style.transition = "1s";
+    header.style.transition = "1s";
+    cards.style.background = "";
+    herocol.style.color = "";
+    header.style.background = "";
+    ourwork.style.background = "";
   }
 });
-document.querySelector('.btn').disabled = true
+document.querySelector(".btn").disabled = true;
 function valdi() {
   var name = document.getElementById("Name").value;
   var email = document.getElementById("email").value;
   var msg = document.getElementById("msg_input").value;
   var error = document.getElementById("error");
 
-  
-   var text = "";
-   if (name.length < 8   ) {
+  var text = "";
+  if (name.length < 8) {
     text = "Please enter valid name";
     document.getElementById("error").style.display = "block";
     error.innerHTML = text;
-    
+
     return false;
-  }
-   else if (email.length < 15 || email.indexOf("@") == -1 )  {
+  } else if (email.length < 15 || email.indexOf("@") == -1) {
     text = "Please FILL the email";
     document.getElementById("error").style.display = "block";
     error.innerHTML = text;
-    
+
     return false;
   } else {
-    
     document.getElementById("error").style.display = "none";
-    document.querySelector('.btn').disabled = false
+    document.querySelector(".btn").disabled = false;
     return true;
   }
 }
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loder");
+  loader.classList.add("loder-hidden");
+  loader.addEventListener("transitend", () => {
+    document.body.removeChild("loder")
+  });
+});
